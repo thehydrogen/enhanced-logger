@@ -1,16 +1,14 @@
 module.exports = (suffix, type) => {
-    let types = ['info', 'warn', 'error', `process`]
-
-    if (!types.includes(type)) {
-        throw new Error("Invalid log message type.")
+    if (!types.length > 20) {
+        throw new Error("Invalid message type. TypeLengthError: Type too long.")
     }
     
     if (!suffix) {
-        throw new Error("Invalid log message.")
+        throw new Error("Invalid log message. MessageNotFound: There was no message to be logged.")
     }
     
     if (!type) {
-        throw new Erorr("Invalid log message type.")
+        throw new Erorr("Invalid log message type. TypeNotFound: There was no type to be used.")
     }
 
     console.log(`[${type}] ${suffix}`)
