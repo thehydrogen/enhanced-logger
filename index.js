@@ -1,5 +1,5 @@
 module.exports = (suffix, type) => {
-    if (!types.length > 20) {
+    if (!type.length > 20) {
         throw new Error("Invalid message type. TypeLengthError: Type too long.")
     }
     
