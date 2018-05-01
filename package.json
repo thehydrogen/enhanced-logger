@@ -1,8 +1,12 @@
 {
     "name": "enhanced-logger",
-    "version": "2.0.1",
+    "version": "2.0.2",
     "description": "",
     "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/thehydrogen/enhanced-logger.git"
+    },
     "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1"
     },
