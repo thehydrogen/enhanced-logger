@@ -10,17 +10,23 @@ npm install enhanced-logger
 __Info__
 ```
 var enhancedLogger = require("enhanced-logger")
-enhancedLogger("hi", "info")
+enhancedLogger.info("<Message>")
 ```
 
 __Warning__
 ```
 var enhancedLogger = require("enhanced-logger")
-enhancedLogger("hi", "warn")
+enhancedLogger.warn("<Message>")
 ```
 
 __Error__
 ```
 var enhancedLogger = require("enhanced-logger")
-enhancedLogger("hi", "error")
+enhancedLogger.err("<Message>")
+```
+
+__Custom__
+```
+var enhancedLogger = require("enhanced-logger")
+enhancedLogger.custom("<Message>", "<Type>")
 ```
