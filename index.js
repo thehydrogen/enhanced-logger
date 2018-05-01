@@ -8,7 +8,7 @@ exports.custom = (suffix, type) => {
     }
     
     if (!type) {
-        throw new Erorr("Invalid log message type. TypeNotFound: There was no type to be used.")
+        throw new Error("Invalid log message type. TypeNotFound: There was no type to be used.")
     }
 
     console.log(`[${type}] ${suffix}`)
