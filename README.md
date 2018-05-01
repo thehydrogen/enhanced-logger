@@ -1,5 +1,6 @@
 # Enhanced Logger
 📝 - A Node.js logger for the new age.
+Introducing a dependency-less, simple, and smart Node.js logger for all. Don't take our word for it? Just try it out. There's documentation on everything you'd possibly want to know.
 
 ## Installation
 ```
