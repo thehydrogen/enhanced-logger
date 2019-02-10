@@ -1,14 +1,14 @@
 exports.custom = (suffix, type) => {
     if (type.length > 20) {
-        throw new Error("Invalid message type. TypeLengthError: Type too long.")
+        throw new Error("Invalid type length. Must be under 20 characters.")
     }
     
     if (!suffix) {
-        throw new Error("Invalid log message. MessageNotFound: There was no message to be logged.")
+        throw new Error("No log message found.")
     }
     
     if (!type) {
-        throw new Error("Invalid log message type. TypeNotFound: There was no type to be used.")
+        throw new Error("No type found.")
     }
 
     console.log(`[${type}] ${suffix}`)
@@ -16,7 +16,7 @@ exports.custom = (suffix, type) => {
 
 exports.info = (suffix) => {
     if(!suffix) {
-        throw new Error("Invalid log message. MessageNotFound: There was no message to be logged.")
+        throw new Error("No log message found.")
     }
     
     console.log(`[info] ${suffix}`)
@@ -24,7 +24,7 @@ exports.info = (suffix) => {
 
 exports.err = (suffix) => {
     if(!suffix) {
-        throw new Error("Invalid log message. MessageNotFound: There was no message to be logged.")
+        throw new Error("No log message found.")
     }
     
     console.log(`[err] ${suffix}`)
@@ -32,7 +32,7 @@ exports.err = (suffix) => {
 
 exports.warn = (suffix) => {
     if(!suffix) {
-        throw new Error("Invalid log message. MessageNotFound: There was no message to be logged.")
+        throw new Error("No log message found.")
     }
     
     console.log(`[warn] ${suffix}`)
@@ -40,7 +40,7 @@ exports.warn = (suffix) => {
 
 exports.process = (suffix) => {
     if(!suffix) {
-        throw new Error("Invalid log message. MessageNotFound: There was no message to be logged.")
+        throw new Error("No log message found.")
     }
     
     console.log(`[process] ${suffix}`)
