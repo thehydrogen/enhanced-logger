@@ -10,7 +10,7 @@
 
 module.exports = {
     info: require('./info.js'),
-    warn: require('./info.js'),
-    error: require('./info.js'),
+    warn: require('./warn.js'),
+    error: require('./error.js'),
     loading: require('./loading.js'),
 };
