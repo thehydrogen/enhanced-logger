@@ -1,7 +1,7 @@
 {
     "name": "enhanced-logger",
-    "version": "2.0.4",
-    "description": "",
+    "version": "3.0.0",
+    "description": "A logger that works.",
     "main": "index.js",
     "repository": {
         "type": "git",
