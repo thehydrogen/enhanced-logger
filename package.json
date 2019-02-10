@@ -1,7 +1,7 @@
 {
     "name": "enhanced-logger",
-    "version": "3.0.0",
-    "description": "A logger that works.",
+    "version": "2.0.4",
+    "description": "",
     "main": "index.js",
     "repository": {
         "type": "git",
@@ -11,5 +11,9 @@
       "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "@kenhydrogen",
-    "license": "MIT"
+    "license": "MIT",
+    "dependencies": {
+        "chalk": "^2.4.2",
+        "ora": "^3.0.0"
+    }
 }
