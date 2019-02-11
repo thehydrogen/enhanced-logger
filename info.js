@@ -1,5 +1,13 @@
 const chalk = require('chalk');
 
-module.exports = (msg) => {
-    console.log(chalk.blue(`ℹ ${msg}`));
+module.exports = (msg, type) => {
+    if (msg) {
+        if (type) {
+            console.log(chalk.blue(`ℹ ${type}: ${msg}`));
+        } else if (!type) {
+            console.log(chalk.blue(`ℹ ${msg}`));
+        }
+    } else {
+        throw new Error('No message was provided.');
+    }
 };
